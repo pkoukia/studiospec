@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles-->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- font awesome link -->
@@ -28,11 +28,8 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="./img/logo-black.png">
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,8 +38,16 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#portfolio" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="children.html">Children</a>
+                  <a class="dropdown-item" href="maternity.html">Maternity</a>
+                  <a class="dropdown-item" href="bridal.html">Bridal</a>
+                  <a class="dropdown-item" href="special.html">Special Occasion</a>
+                </div>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -62,22 +67,84 @@
 
     <header class="bg-dark text-white">
       <div class="container text-center">
-        <h1>StudioSpec</h1>
-        <p class="lead">Photography Services</p>
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">More Information</a>
+        <img class="img-fluid mb-1 d-block mx-auto" src="./img/logo-negative-small.png">
+        <br>
+        <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">More Information</a>
       </div>
     </header>
 
-    <section id="about">
+    <!-- Services -->
+
+      <section id="services" class="bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Services we offer</h2>
+              <p class="lead">Browse through our services and let us know how we can help make your photos come to life.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-child text-dark mb-3 sr-icons"></i>
+                <h3 class="mb-3">Children</h3>
+                <p class="text-muted mb-0">Expecting or just had a baby? Maternity and Newborn photoshoots are available.
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-hand-holding-heart text-dark mb-3 sr-icons"></i>
+                <h3 class="mb-3">Family</h3>
+                <p class="text-muted mb-0">Looking to update the family portrait? Look no further.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-dove text-dark mb-3 sr-icons"></i>
+                <h3 class="mb-3">Bridal</h3>
+                <p class="text-muted mb-0">From engagement parties, to bridal parties, to the big day itself, we've got you covered.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-heart text-dark mb-3 sr-icons"></i>
+                <h3 class="mb-3">Special Occasion</h3>
+                <p class="text-muted mb-0">Birthdays, Holdays, Corporate Events, & just about any occasion!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- portfolio -->
+
+    <section class="content-section" id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Section</h2>
-            <p class="lead">This is a great place to do about section. You can write stuff about yourself or the StudioSpec Company</p>
-            <ul>
-              <li>Profile Photo</li>
-              <li>Descirption of photo or story</li>
-            </ul>
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <img class="img-fluid" src="img/headert.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <img class="img-fluid" src="img/header5.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <img class="img-fluid" src="img/header4.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <img class="img-fluid" src="img/header3.jpg" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -87,9 +154,9 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header.jpeg">
-              <img class="img-fluid" src="img/header.jpeg" alt="">
+          <div class="col-sm-4">
+            <a class="portfolio-box" href="#">
+              <img class="img-fluid" src="img/header4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -102,9 +169,9 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header1.jpeg">
-              <img class="img-fluid" src="img/header1.jpeg" alt="">
+          <div class="col-sm-4">
+            <a class="portfolio-box" href="#">
+              <img class="img-fluid" src="img/header3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -117,9 +184,9 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header2.jpeg">
-              <img class="img-fluid" src="img/header2.jpeg" alt="">
+          <div class="col-sm-4">
+            <a class="portfolio-box" href="#">
+              <img class="img-fluid" src="img/header1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -132,39 +199,9 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header3.jpeg">
-              <img class="img-fluid" src="img/header3.jpeg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-
-                  </div>
-                  <div class="project-name">
-
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header4.jpeg">
-              <img class="img-fluid" src="img/header4.jpeg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-
-                  </div>
-                  <div class="project-name">
-
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/header5.jpeg">
-              <img class="img-fluid" src="img/header5.jpeg" alt="">
+          <div class="col-sm-4">
+            <a class="portfolio-box" href="#">
+              <img class="img-fluid" src="img/headert.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -181,51 +218,20 @@
       </div>
     </section>
 
+    <!-- about -->
 
-  <!-- Services -->
-
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Services we offer</h2>
-            <p class="lead">Browse through our services and let us know how we can help make your photos come to life.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-child text-dark mb-3 sr-icons"></i>
-              <h3 class="mb-3">Children</h3>
-              <p class="text-muted mb-0">Expecting or just had a baby? Maternity and Newborn photoshoots are available.
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-hand-holding-heart text-dark mb-3 sr-icons"></i>
-              <h3 class="mb-3">Family</h3>
-              <p class="text-muted mb-0">Looking to update the family portrait? Look no further.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-dove text-dark mb-3 sr-icons"></i>
-              <h3 class="mb-3">Bridal</h3>
-              <p class="text-muted mb-0">From engagement parties, to bridal parties, to the big day itself, we've got you covered.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-dark mb-3 sr-icons"></i>
-              <h3 class="mb-3">Special Occasion</h3>
-              <p class="text-muted mb-0">Birthdays, Holdays, Corporate Events, & just about any occasion!</p>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-centre">About</h2>
+                <img class="img-fluid mb-1 d-block mx-auto" src="./img/azi.jpg">
+                <br>
+                <p class="lead">StudioSpec has been serving clients within various countries including Canada, The United States and Europe for over 12 years. <br><br> Under the helm of 25 year professional, Azita Ziaei, StudioSpec specializes in maternity and newborn portraiture. With a keen eye for capturing fine details, Azita helps add a touch which creates memories to outlast a lifetime.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
   <!-- Testimonials -->
 

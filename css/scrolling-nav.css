@@ -7,8 +7,8 @@
 header {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  padding: 360px 0 300px;
-  background-image: url("../img/header.jpeg");
+  padding: 200px 0 170px;
+  background-image: url("../img/header.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,13 +18,13 @@ header {
 
 @media (min-width: 992px) {
   header {
-    padding: 368px 0 300px;
+    padding: 310px 0 100px;
   }
 }
 
 @media (min-width: 992px) {
   header {
-    padding: 368px 0 300px;
+    padding: 310px 0 100px;
   }
 }
 
@@ -40,7 +40,7 @@ footer {
 }
 
 nav {
-  background-color: black;
+  background-color: white;
 }
 
 nav img {
@@ -62,4 +62,86 @@ nav img {
 
 .text-centre {
   text-align: center!important;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.img-fluid {
+  width: auto;
+  height: auto;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(226, 223, 223, 0.7);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
 }
