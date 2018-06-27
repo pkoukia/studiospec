@@ -53,6 +53,10 @@ nav img {
   border-width: 2px;
 }
 
+.btn-light {
+  opacity: 0.7;
+}
+
 .btn-social {
   width: 3.25rem;
   height: 3.25rem;
@@ -71,6 +75,10 @@ nav img {
 .img-fluid {
   width: auto;
   height: auto;
+}
+
+.headerimg {
+  opacity: 0.7;
 }
 
 img {
